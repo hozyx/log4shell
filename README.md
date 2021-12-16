@@ -3,5 +3,5 @@ Python Script to scan server file system for log4j jars that are vulnerable to C
 
 The script takes the file system path to scan as input and lists down the vulnerable jar File Path, Bundle Version and Bundle Name. The values are colon ":" separated. This output format is useful if the script is executed by an orchestration tool like Ansible and needs to be machine readable. 
 
-The scripts supports additional options --Summary and --UnProcessedFiles to print more details of the scan
+The scripts supports additional options --Summary and --UnprocessedFiles to print more details of the scan
 
