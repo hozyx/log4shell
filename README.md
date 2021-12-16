@@ -1,2 +1,7 @@
 # log4shell
-Applications that are vulnerable to the log4j CVE-2021-44228/45046 issue may be detectable by scanning jar, war, ear, zip files to search for the presence of JndiLookup.class.
+Python Script to scan server file system for log4j jars that are vulnerable to CVE-2021-44228 and CVE-2021-45046. The script recursively goes through the file system (including zip, ear, war) to find log4j versions 2.* to 2.15 with org/apache/logging/log4j/core/lookup/JndiLookup.class.  
+
+The script takes the file system path to scan as input and lists down the vulnerable jar File Path, Bundle Version and Bundle Name. The values are colon ":" separated. This output format is useful if the script is executed by an orchestration tool like Ansible and needs to be machine readable. 
+
+The scripts supports additional options --Summary and --UnProcessedFiles to print more details of the scan
+
